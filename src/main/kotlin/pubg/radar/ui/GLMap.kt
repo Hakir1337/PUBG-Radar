@@ -395,7 +395,7 @@ class GLMap : InputAdapter(), ApplicationListener, GameListener {
                 "Sks",
                 "Grenade"
         )
-        val iconScale = 1.5f / camera.zoom
+        val iconScale = 3f / camera.zoom
         paint(itemCamera.combined) {
             droppedItemLocation.values.asSequence().filter { it.second.isNotEmpty() }
                     .forEach {
